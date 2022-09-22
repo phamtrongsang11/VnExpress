@@ -1,0 +1,176 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.navbar {
+	background-color: white;
+}
+
+.nav-link {
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+.no-border {
+	border: none;
+}
+.ml-15 {
+	margin-left: 15px;
+}
+
+.divider {
+	left: 0;
+	top: 4px;
+	width: 1px;
+	background-color: #e5e5e5;
+}
+.list-group .list-group-item {
+	border: none;
+}
+
+.list-group {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.list-group a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+.card-body a {
+	text-decoration: none;
+	color: black;
+}
+.search-top {
+	position: relative;
+}
+
+.search-top input {
+	border-radius: 16px;
+}
+
+.search-top button {
+	border-radius: 16px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: white;
+	border: 1px solid #e5e5e5;
+}
+
+.search-top button i {
+	color: black;
+}
+
+.search-top button:hover i {
+	color: white;
+}
+
+.target,
+.target .card {
+	background-color: rgba(247, 247, 247);
+	border: none;
+}
+
+.mainScreen {
+	border-top: 1px solid #e5e5e5;
+}
+
+.mainScreen .card {
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.leftMainScreen {
+	border-right: 1px solid #e5e5e5;
+}
+
+.cateTitle {
+	border-bottom: 1px solid rgba(159, 34, 78);
+	width: fit-content;
+}
+
+.numReview {
+	color: blue;
+}
+.card .list-group {
+	border: none;
+}
+
+.list-group a {
+	font-weight: 600;
+}
+div.navigation {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	overflow: hidden;
+}
+
+@media (max-width: 991px) {
+	.menuToggle {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: url(../public/menu.png);
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		background-color: black;
+	}
+	.menuToggle.active {
+		background: url(../public/close.png);
+		background-size: 25px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: black;
+	}
+	.navigation {
+		display: none;
+	}
+	.navigation.active {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 50px;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: #fff;
+		z-index: 1000;
+	}
+	.navigation.active .list-group {
+		border: none;
+	}
+	.navigation.active .list-group-horizontal {
+		flex-direction: column;
+	}
+	.nav-link {
+		border: none;
+	}
+	.navbar-nav {
+		margin-top: 10px;
+	}
+	.navbar-nav .nav-link,
+	.navbar-nav .search-top {
+		margin-top: 10px;
+	}
+	h5.card-title {
+		font-size: 1rem;
+	}
+}
